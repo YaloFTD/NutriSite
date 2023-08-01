@@ -1,4 +1,4 @@
-<h1><a href="https://yaloftd.github.io/Proxylab/">Одностраничный сайт</a> о здоровом питании</h1>
+<h1><a href="https://yaloftd.github.io/NutriSite/">Одностраничный сайт</a> о здоровом питании</h1>
 <ul>
   <li>Адаптив до 320px;</li>
   <li>Меню бургер;</li>
