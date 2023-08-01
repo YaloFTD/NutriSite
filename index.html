@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>NutriSite</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <a href="" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+            <div class="header__menu menu">
+               <button type="button" class="menu__icon icon-menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </button>
+               <nav class="menu__body">
+                  <ul class="menu__list">
+                     <li class="menu__item"><a href="#" data-goto=".home" class="menu__link _active">Home</a></li>
+                     <li class="menu__item"><a href="#" data-goto=".menu-foods" class="menu__link">Menu</a></li>
+                     <li class="menu__item"><a href="#" data-goto=".about" class="menu__link">About</a></li>
+                     <li class="menu__item"><a href="#" data-goto=".benefits" class="menu__link">Contact</a></li>
+                     <li class="menu__item"><a href="#" data-goto=".review" class="menu__link">Reviews</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <div class="header__bg">
+            <img src="img/bg.png" alt="Bg">
+         </div>
+      </header>
+      <main class="page">
+         <div class="page__home home">
+            <div class="home__container">
+               <div class="home__body _anim-items _anim-no-hide">
+                  <h1 class="home__title title">Eat Healthy And <span>Natural Food</span></h1>
+                  <div class="home__text text"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout the generated Lorem Ipsum is therefore always free from repetition.</p></div>
+                  <a href="#" class="home__btn btn"><span>Discover Food</span></a>
+               </div>
+               <div class="home__image">
+                  <div class="image-block _anim-items _anim-no-hide">
+                     <div class="image-block__img">
+                        <img src="img/home/01.jpg" alt="Image">
+                     </div>
+                     <div class="image-block__sheet image-block__sheet-l"></div>
+                     <div class="image-block__sheet image-block__sheet-r"></div>
+                     <div class="image-block__circle image-block__circle-1"></div>
+                     <div class="image-block__circle image-block__circle-2"></div>
+                     <div class="image-block__bg"></div>
+                  </div>
+                  <div class="home__reviews reviews-home _anim-items _anim-no-hide">
+                     <div class="reviews-home__item reviews-home__item-1">
+                        <div class="reviews-home__top">
+                           <div class="reviews-home__image">
+                              <img src="img/home/02.jpg" alt="Image">
+                           </div>
+                           <div class="reviews-home__body">
+                              <div class="reviews-home__name">Allie Grater</div>
+                              <div class="reviews-home__rating">
+                                 <img src="img/home/Star.svg" alt="Star">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="reviews-home__text"><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p></div>
+                     </div>
+                     <div class="reviews-home__item reviews-home__item-2">
+                        <div class="reviews-home__top">
+                           <div class="reviews-home__image">
+                              <img src="img/home/03.jpg" alt="Image">
+                           </div>
+                           <div class="reviews-home__body">
+                              <div class="reviews-home__name">Percy Kewshun</div>
+                              <div class="reviews-home__rating">
+                                 <img src="img/home/Star.svg" alt="Star">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="reviews-home__text"><p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="home__bg">
+               <img src="img/home/bg.jpg" alt="Bg">
+            </div>
+         </div>
+         <div class="page__menu menu-foods">
+            <div class="menu-foods__container">
+               <div class="menu-foods__body">
+                  <div class="menu-foods__top _anim-items _anim-no-hide">
+                     <h2 class="menu-foods__title title">Fresh Healthy <span>Delicious Foods</span></h2>
+                     <div class="menu-foods__subtitle subtitle">We Made Fresh and Healthy Foods...</div>
+                  </div>
+                  <div class="menu-foods__image">
+                     <div class="image-block _anim-items _anim-no-hide">
+                        <div class="image-block__img">
+                           <img src="img/menu/big01.jpg" alt="Image">
+                        </div>
+                        <div class="image-block__sheet image-block__sheet-l"></div>
+                        <div class="image-block__sheet image-block__sheet-r"></div>
+                        <div class="image-block__circle image-block__circle-1"></div>
+                        <div class="image-block__circle image-block__circle-2"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="menu-foods__slider swiper _anim-items _anim-no-hide">
+                  <div class="swiper-pagination">
+                  </div>
+                  <div class="menu-foods__wrapper swiper-wrapper">
+                     <div class="menu-foods__slide menu-foods-slide swiper-slide">
+                        <div class="menu-foods-slide__body">
+                           <div class="menu-foods-slide__column">
+                              <div class="menu-foods-slide__item">
+                                 <div class="menu-foods-slide__image">
+                                    <img src="img/menu/01.jpg" alt="Image">
+                                 </div>
+                                 <div class="menu-foods-slide__bottom">
+                                    <div class="menu-foods-slide__content">
+                                       <a href="#" class="menu-foods-slide__title">Black Souce Pasta</a>
+                                       <div class="menu-foods-slide__subtitle">Mix Vegetabale Pasta...</div>
+                                    </div>
+                                    <a href="#" class="menu-foods-slide__link">
+                                       <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="menu-foods-slide__column">
+                              <div class="menu-foods-slide__item">
+                                 <div class="menu-foods-slide__image">
+                                    <img src="img/menu/02.jpg" alt="Image">
+                                 </div>
+                                 <div class="menu-foods-slide__bottom">
+                                    <div class="menu-foods-slide__content">
+                                       <a href="#" class="menu-foods-slide__title">Green Leaf Salad</a>
+                                       <div class="menu-foods-slide__subtitle">Leaf with tomato & onion...</div>
+                                    </div>
+                                    <a href="#" class="menu-foods-slide__link">
+                                       <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="menu-foods-slide__column">
+                              <div class="menu-foods-slide__item">
+                                 <div class="menu-foods-slide__image">
+                                    <img src="img/menu/03.jpg" alt="Image">
+                                 </div>
+                                 <div class="menu-foods-slide__bottom">
+                                    <div class="menu-foods-slide__content">
+                                       <a href="#" class="menu-foods-slide__title">White Meat Salad</a>
+                                       <div class="menu-foods-slide__subtitle">Tomato & Veggies...</div>
+                                    </div>
+                                    <a href="#" class="menu-foods-slide__link">
+                                       <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="menu-foods-slide__column">
+                              <div class="menu-foods-slide__item">
+                                 <div class="menu-foods-slide__image">
+                                    <img src="img/menu/04.jpg" alt="Image">
+                                 </div>
+                                 <div class="menu-foods-slide__bottom">
+                                    <div class="menu-foods-slide__content">
+                                       <a href="#" class="menu-foods-slide__title">Cacumber  Salad</a>
+                                       <div class="menu-foods-slide__subtitle">Cacumber, Orange, etc...</div>
+                                    </div>
+                                    <a href="#" class="menu-foods-slide__link">
+                                       <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="menu-foods__slide menu-foods-slide swiper-slide">
+                        <div class="menu-foods-slide__body">
+                           <div class="menu-foods-slide__column">
+                              <div class="menu-foods-slide__item">
+                                 <div class="menu-foods-slide__image">
+                                    <img src="img/menu/01.jpg" alt="Image">
+                                 </div>
+                                 <div class="menu-foods-slide__bottom">
+                                    <div class="menu-foods-slide__content">
+                                       <a href="#" class="menu-foods-slide__title">Black Souce Pasta</a>
+                                       <div class="menu-foods-slide__subtitle">Mix Vegetabale Pasta...</div>
+                                    </div>
+                                    <a href="#" class="menu-foods-slide__link">
+                                       <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="menu-foods-slide__column">
+                              <div class="menu-foods-slide__item">
+                                 <div class="menu-foods-slide__image">
+                                    <img src="img/menu/02.jpg" alt="Image">
+                                 </div>
+                                 <div class="menu-foods-slide__bottom">
+                                    <div class="menu-foods-slide__content">
+                                       <a href="#" class="menu-foods-slide__title">Green Leaf Salad</a>
+                                       <div class="menu-foods-slide__subtitle">Leaf with tomato & onion...</div>
+                                    </div>
+                                    <a href="#" class="menu-foods-slide__link">
+                                       <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="menu-foods-slide__column">
+                              <div class="menu-foods-slide__item">
+                                 <div class="menu-foods-slide__image">
+                                    <img src="img/menu/03.jpg" alt="Image">
+                                 </div>
+                                 <div class="menu-foods-slide__bottom">
+                                    <div class="menu-foods-slide__content">
+                                       <a href="#" class="menu-foods-slide__title">White Meat Salad</a>
+                                       <div class="menu-foods-slide__subtitle">Tomato & Veggies...</div>
+                                    </div>
+                                    <a href="#" class="menu-foods-slide__link">
+                                       <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="menu-foods__slide menu-foods-slide swiper-slide">
+                        <div class="menu-foods-slide__body">
+                           <div class="menu-foods-slide__column">
+                              <div class="menu-foods-slide__item">
+                                 <div class="menu-foods-slide__image">
+                                    <img src="img/menu/01.jpg" alt="Image">
+                                 </div>
+                                 <div class="menu-foods-slide__bottom">
+                                    <div class="menu-foods-slide__content">
+                                       <a href="#" class="menu-foods-slide__title">Black Souce Pasta</a>
+                                       <div class="menu-foods-slide__subtitle">Mix Vegetabale Pasta...</div>
+                                    </div>
+                                    <a href="#" class="menu-foods-slide__link">
+                                       <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="menu-foods-slide__column">
+                              <div class="menu-foods-slide__item">
+                                 <div class="menu-foods-slide__image">
+                                    <img src="img/menu/03.jpg" alt="Image">
+                                 </div>
+                                 <div class="menu-foods-slide__bottom">
+                                    <div class="menu-foods-slide__content">
+                                       <a href="#" class="menu-foods-slide__title">White Meat Salad</a>
+                                       <div class="menu-foods-slide__subtitle">Tomato & Veggies...</div>
+                                    </div>
+                                    <a href="#" class="menu-foods-slide__link">
+                                       <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                       </svg>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="menu-foods__arrows">
+                     <div class="menu-foods__arrow menu-foods__arrow-prev">
+                        <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M9.625 1.6875L1.8125 9.5L9.625 17.3125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </div>
+                     <div class="menu-foods__arrow menu-foods__arrow-next">
+                        <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M9.625 1.6875L1.8125 9.5L9.625 17.3125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="menu-foods__bg">
+               <img src="img/menu/bg.jpg" alt="Bg">
+            </div>
+         </div>
+         <div class="page__about about">
+            <div class="about__body">
+               <div class="about__container">
+                  <div class="about__content _anim-items _anim-no-hide">
+                     <h2 class="about__title title">Type of Ingridiants in <span>Nutrition Diet</span></h2>
+                     <div class="about__subtitle subtitle">Good food ends with good talk...</div>
+                     <div class="about__text text">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout the generated Lorem Ipsum is therefore always free from repetition.</p>
+                        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages...</p>
+                     </div>
+                     <div class="about__buttons">
+                        <a href="#" class="about__btn btn"><span>See Diet Plan</span></a>
+                        <a href="#" class="about__link btn"><span>Learn More</span></a>
+                     </div>
+                  </div>
+                  <div class="about__image">
+                     <div class="image-block _anim-items _anim-no-hide">
+                        <div class="image-block__img">
+                           <img src="img/about/01.jpg" alt="Image">
+                        </div>
+                        <div class="image-block__circle image-block__circle-1"></div>
+                        <div class="image-block__circle image-block__circle-2"></div>
+                     </div>
+                     <div class="about__decor decor-about _anim-items _anim-no-hide">
+                        <div class="decor-about__arrow decor-about__arrow-1">
+                           <img src="img/about/icons/01.svg" alt="Arrow">
+                        </div>
+                        <div class="decor-about__arrow decor-about__arrow-2">
+                           <img src="img/about/icons/02.svg" alt="Arrow">
+                        </div>
+                        <div class="decor-about__arrow decor-about__arrow-3">
+                           <img src="img/about/icons/03.svg" alt="Arrow">
+                        </div>
+                        <div class="decor-about__arrow decor-about__arrow-4">
+                           <img src="img/about/icons/04.svg" alt="Arrow">
+                        </div>
+                        <div class="decor-about__item decor-about__item-1">
+                           <div class="decor-about__image">
+                              <img src="img/about/03-d.png" alt="Image">
+                           </div>
+                        </div>
+                        <div class="decor-about__item decor-about__item-2">
+                           <div class="decor-about__image">
+                              <img src="img/about/02-d.png" alt="Image">
+                           </div>
+                        </div>
+                        <div class="decor-about__item decor-about__item-3">
+                           <div class="decor-about__image">
+                              <img src="img/about/01-d.png" alt="Image">
+                           </div>
+                        </div>
+                        <div class="decor-about__item decor-about__item-4">
+                           <div class="decor-about__image">
+                              <img src="img/about/04-d.png" alt="Image">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="about__bg">
+                  <img src="img/about/bg.jpg" alt="Bg">
+               </div>
+            </div>
+         </div>
+         <div class="page__benefits benefits">
+            <div class="benefits__container">
+               <div class="benefits__top _anim-items _anim-no-hide">
+                  <h2 class="benefits__title title">Benefits of Nutrition</h2>
+                  <div class="benefits__subtitle subtitle">Eat Healthy, Be Nutrition Wealthy</div>
+               </div>
+               <div class="benefits__body _anim-items _anim-no-hide">
+                  <div class="benefits__image">
+                     <img src="img/benefits/01.png" alt="Image">
+                  </div>
+                  <div class="benefits__arrow benefits__arrow-1">
+                     <img src="img/benefits/icons/arrow-01.svg" alt="Arrow">
+                  </div>
+                  <div class="benefits__arrow benefits__arrow-2">
+                     <img src="img/benefits/icons/arrow-02.svg" alt="Arrow">
+                  </div>
+                  <div class="benefits__arrow benefits__arrow-3">
+                     <img src="img/benefits/icons/arrow-03.svg" alt="Arrow">
+                  </div>
+                  <div class="benefits__arrow benefits__arrow-4">
+                     <img src="img/benefits/icons/arrow-04.svg" alt="Arrow">
+                  </div>
+                  <div class="benefits__arrow benefits__arrow-5">
+                     <img src="img/benefits/icons/arrow-05.svg" alt="Arrow">
+                  </div>
+                  <div class="benefits__items">
+                     <div class="benefits__item benefits__item-1 item-benefits">
+                        <div class="item-benefits__content">
+                           <div class="item-benefits__icons">
+                              <img src="img/benefits/icons/01.png" alt="Icon">
+                           </div>
+                           <div class="item-benefits__body">
+                              <a href="#" class="item-benefits__title">Heart Health</a>
+                              <div class="item-benefits__text"><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p></div>
+                              <a href="#" class="item-benefits__link">
+                                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="benefits__item benefits__item-2 item-benefits">
+                        <div class="item-benefits__content">
+                           <div class="item-benefits__icons">
+                              <img src="img/benefits/icons/02.png" alt="Icon">
+                           </div>
+                           <div class="item-benefits__body">
+                              <a href="#" class="item-benefits__title">Longevity</a>
+                              <div class="item-benefits__text"><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p></div>
+                              <a href="#" class="item-benefits__link">
+                                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="benefits__item benefits__item-3 item-benefits">
+                        <div class="item-benefits__content">
+                           <div class="item-benefits__icons">
+                              <img src="img/benefits/icons/03.png" alt="Icon">
+                           </div>
+                           <div class="item-benefits__body">
+                              <a href="#" class="item-benefits__title">Cancer Prevention</a>
+                              <div class="item-benefits__text"><p>There are many variations of passages of Lorem Ipsum available,  or randomised words which don't look even slightly believable.</p></div>
+                              <a href="#" class="item-benefits__link">
+                                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="benefits__item benefits__item-4 item-benefits">
+                        <div class="item-benefits__content">
+                           <div class="item-benefits__icons">
+                              <img src="img/benefits/icons/04.png" alt="Icon">
+                           </div>
+                           <div class="item-benefits__body">
+                              <a href="#" class="item-benefits__title">Immunity</a>
+                              <div class="item-benefits__text"><p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p></div>
+                              <a href="#" class="item-benefits__link">
+                                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="benefits__item benefits__item-5 item-benefits">
+                        <div class="item-benefits__content">
+                           <div class="item-benefits__icons">
+                              <img src="img/benefits/icons/05.png" alt="Icon">
+                           </div>
+                           <div class="item-benefits__body">
+                              <a href="#" class="item-benefits__title">Beauty</a>
+                              <div class="item-benefits__text"><p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, but the majority have suffered alteration in some form, by injected humour.</p></div>
+                              <a href="#" class="item-benefits__link">
+                                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.25 1.125L8.125 8L1.25 14.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="benefits__bg">
+               <img src="img/benefits/bg.jpg" alt="Bg">
+            </div>
+         </div>
+         <div class="page__review review">
+            <div class="review__container">
+               <div class="review__body _anim-items _anim-no-hide">
+                  <h2 class="review__title title">Your Personal <span>Nutritionist</span></h2>
+                  <div class="review__subtitle subtitle">Nutrition For a Healthy Body...</div>
+                  <ul class="review__list _anim-items _anim-no-hide">
+                     <li class="review__item">It is a long established fact that a reader will be distracted.</li>
+                     <li class="review__item">Nutrition is cool, if you don’t have enough of it, you’re a fool.</li>
+                     <li class="review__item">Always been wishing for healthy nutrition.</li>
+                     <li class="review__item">Nutrition is needed to prevent sickness.</li>
+                     <li class="review__item">Good nutrition will have you feeling your best all the time!</li>
+                     <li class="review__item">Everything your body needs, nothing it doesn’t.</li>
+                  </ul>
+                  <a href="#" class="review__btn btn"><span>Get Start</span></a>
+               </div>
+               <div class="review__image">
+                  <div class="image-block _anim-items _anim-no-hide">
+                     <div class="image-block__img">
+                        <img src="img/review/01.png" alt="Image">
+                     </div>
+                     <div class="image-block__circle image-block__circle-1"></div>
+                     <div class="image-block__circle image-block__circle-2"></div>
+                  </div>
+                  <div class="review__decor decor-review _anim-items _anim-no-hide">
+                     <div class="decor-review__item decor-review__item-1">
+                        <div class="decor-review__content">
+                           <div class="decor-review__title">Calories</div>
+                           <div class="decor-review__value">250</div>
+                           <div class="decor-review__unit">Kcal</div>
+                        </div>
+                     </div>
+                     <div class="decor-review__item decor-review__item-2">
+                        <div class="decor-review__content">
+                           <div class="decor-review__title">Fat</div>
+                           <div class="decor-review__value">14</div>
+                           <div class="decor-review__unit">Gram</div>
+                        </div>
+                     </div>
+                     <div class="decor-review__item decor-review__item-3">
+                        <div class="decor-review__content">
+                           <div class="decor-review__title">Protein</div>
+                           <div class="decor-review__value">24</div>
+                           <div class="decor-review__unit">Gram</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="review__bg">
+               <img src="img/review/bg.png" alt="Bg">
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__body">
+            <div class="footer__container">
+               <div class="footer__menu menu-footer">
+                  <ul class="menu-footer__list">
+                     <li class="menu-footer__item"><a href="#" class="menu-footer__link">Home</a></li>
+                     <li class="menu-footer__item"><a href="#" class="menu-footer__link">Menu</a></li>
+                     <li class="menu-footer__item"><a href="#" class="menu-footer__link">About</a></li>
+                     <li class="menu-footer__item"><a href="#" class="menu-footer__link">Contact</a></li>
+                     <li class="menu-footer__item"><a href="#" class="menu-footer__link">Review</a></li>
+                  </ul>
+               </div>
+               <div class="footer__social social-footer">
+                  <a href="#" class="social-footer__site">www.nutrisite.com</a>
+                  <div class="social-footer__items">
+                     <a href="#" class="social-footer__item">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_99_4)">
+                           <path d="M26.8066 22.5C26.8066 24.8785 24.8785 26.8066 22.5 26.8066C20.1215 26.8066 18.1934 24.8785 18.1934 22.5C18.1934 20.1215 20.1215 18.1934 22.5 18.1934C24.8785 18.1934 26.8066 20.1215 26.8066 22.5Z" fill="#545454"/>
+                           <path d="M32.5717 14.8803C32.3647 14.3194 32.0344 13.8116 31.6053 13.3948C31.1885 12.9656 30.681 12.6354 30.1197 12.4283C29.6645 12.2515 28.9806 12.0411 27.7209 11.9837C26.3583 11.9216 25.9497 11.9082 22.5 11.9082C19.0499 11.9082 18.6414 11.9212 17.2791 11.9834C16.0194 12.0411 15.3352 12.2515 14.8803 12.4283C14.319 12.6354 13.8112 12.9656 13.3947 13.3948C12.9656 13.8116 12.6353 14.319 12.4279 14.8803C12.2511 15.3356 12.0407 16.0198 11.9833 17.2795C11.9212 18.6418 11.9078 19.0503 11.9078 22.5004C11.9078 25.9501 11.9212 26.3587 11.9833 27.7213C12.0407 28.981 12.2511 29.6649 12.4279 30.1201C12.6353 30.6814 12.9652 31.1889 13.3944 31.6057C13.8112 32.0348 14.3186 32.3651 14.88 32.5721C15.3352 32.7493 16.0194 32.9597 17.2791 33.0171C18.6414 33.0792 19.0496 33.0922 22.4997 33.0922C25.9501 33.0922 26.3586 33.0792 27.7206 33.0171C28.9802 32.9597 29.6645 32.7493 30.1197 32.5721C31.2465 32.1375 32.1371 31.2469 32.5717 30.1201C32.7485 29.6649 32.959 28.981 33.0167 27.7213C33.0788 26.3587 33.0919 25.9501 33.0919 22.5004C33.0919 19.0503 33.0788 18.6418 33.0167 17.2795C32.9593 16.0198 32.7489 15.3356 32.5717 14.8803ZM22.5 29.1344C18.8357 29.1344 15.8653 26.1643 15.8653 22.5001C15.8653 18.8358 18.8357 15.8657 22.5 15.8657C26.1639 15.8657 29.1344 18.8358 29.1344 22.5001C29.1344 26.1643 26.1639 29.1344 22.5 29.1344ZM29.3967 17.1538C28.5404 17.1538 27.8462 16.4596 27.8462 15.6034C27.8462 14.7471 28.5404 14.0529 29.3967 14.0529C30.2529 14.0529 30.9471 14.7471 30.9471 15.6034C30.9468 16.4596 30.2529 17.1538 29.3967 17.1538Z" fill="#545454"/>
+                           <path d="M22.5 0C10.0755 0 0 10.0755 0 22.5C0 34.9245 10.0755 45 22.5 45C34.9245 45 45 34.9245 45 22.5C45 10.0755 34.9245 0 22.5 0ZM35.342 27.8267C35.2795 29.202 35.0608 30.141 34.7415 30.9629C34.0703 32.6984 32.6984 34.0703 30.9629 34.7415C30.1413 35.0608 29.202 35.2792 27.827 35.342C26.4492 35.4048 26.0091 35.4199 22.5003 35.4199C18.9912 35.4199 18.5514 35.4048 17.1733 35.342C15.7983 35.2792 14.859 35.0608 14.0374 34.7415C13.175 34.4171 12.3943 33.9086 11.7488 33.2512C11.0917 32.606 10.5833 31.825 10.2588 30.9629C9.93954 30.1413 9.72084 29.202 9.65836 27.827C9.59484 26.4489 9.58008 26.0088 9.58008 22.5C9.58008 18.9912 9.59484 18.5511 9.65801 17.1733C9.7205 15.798 9.93885 14.859 10.2581 14.0371C10.5826 13.175 11.0914 12.394 11.7488 11.7488C12.394 11.0914 13.175 10.5829 14.0371 10.2585C14.859 9.93919 15.798 9.72084 17.1733 9.65801C18.5511 9.59518 18.9912 9.58008 22.5 9.58008C26.0088 9.58008 26.4489 9.59518 27.8267 9.65836C29.202 9.72084 30.141 9.93919 30.9629 10.2581C31.825 10.5826 32.606 11.0914 33.2515 11.7488C33.9086 12.3943 34.4174 13.175 34.7415 14.0371C35.0611 14.859 35.2795 15.798 35.3423 17.1733C35.4052 18.5511 35.4199 18.9912 35.4199 22.5C35.4199 26.0088 35.4052 26.4489 35.342 27.8267Z" fill="#545454"/>
+                           </g>
+                           <defs>
+                           <clipPath id="clip0_99_4">
+                           <rect width="45" height="45" fill="white"/>
+                           </clipPath>
+                           </defs>
+                        </svg>
+                     </a>
+                     <a href="#" class="social-footer__item">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_99_1)">
+                           <path d="M22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0ZM31.0838 11.4583L27.9718 11.4597C25.5315 11.4597 25.0596 12.6193 25.0596 14.3208V18.0727H30.879L30.8762 23.9492H25.0601V39.0296H18.9902V23.9492H13.9162V18.0727H18.9902V13.7389C18.9902 8.70951 22.0631 5.97038 26.5493 5.97038L31.0843 5.97729V11.4583H31.0838Z" fill="#545454"/>
+                           </g>
+                           <defs>
+                           <clipPath id="clip0_99_1">
+                           <rect width="45" height="45" fill="white"/>
+                           </clipPath>
+                           </defs>
+                        </svg>
+                     </a>
+                     <a href="#" class="social-footer__item">
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <g clip-path="url(#clip0_99_9)">
+                           <path d="M22.5 0C10.0755 0 0 10.0755 0 22.5C0 34.9245 10.0755 45 22.5 45C34.9245 45 45 34.9245 45 22.5C45 10.0755 34.9245 0 22.5 0ZM32.7732 17.5431C32.7832 17.7645 32.788 17.987 32.788 18.2105C32.788 25.0348 27.5935 32.9041 18.0941 32.9044H18.0945H18.0941C15.1776 32.9044 12.4636 32.0495 10.1781 30.5846C10.5822 30.6323 10.9935 30.656 11.41 30.656C13.8297 30.656 16.0565 29.8306 17.8243 28.4453C15.5635 28.4034 13.6574 26.9103 12.9996 24.8583C13.3144 24.9187 13.6382 24.9517 13.9701 24.9517C14.4415 24.9517 14.8981 24.8882 15.3321 24.7697C12.969 24.2966 11.1889 22.2082 11.1889 19.7074C11.1889 19.6841 11.1889 19.6631 11.1896 19.6415C11.8855 20.0284 12.6813 20.2612 13.5286 20.2873C12.142 19.362 11.2304 17.7803 11.2304 15.9885C11.2304 15.0423 11.4862 14.1559 11.9298 13.3927C14.4765 16.5176 18.2826 18.5727 22.5748 18.7887C22.4863 18.4103 22.4406 18.0162 22.4406 17.6111C22.4406 14.7601 24.7536 12.4472 27.6056 12.4472C29.0911 12.4472 30.4328 13.0751 31.3752 14.079C32.5518 13.8469 33.6566 13.4171 34.6547 12.8255C34.2684 14.0309 33.4499 15.0423 32.3836 15.682C33.4283 15.557 34.4239 15.2799 35.3492 14.8686C34.6581 15.9044 33.7816 16.8142 32.7732 17.5431Z" fill="#545454"/>
+                           </g>
+                           <defs>
+                           <clipPath id="clip0_99_9">
+                           <rect width="45" height="45" fill="white"/>
+                           </clipPath>
+                           </defs>
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__copy"><p>2021 copyright. All right reserved.</p></div>
+      </footer>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
