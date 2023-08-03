@@ -117,7 +117,7 @@ if (menuLinks.length > 0) {
       }
    }
    function onMenuLinkScroll(e) {
-      let scrollDistance = pageYOffset + 5;
+      let scrollDistance = pageYOffset;
       for (let menuLink of menuLinks) {
          if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
             let gotoBlock = document.querySelector(menuLink.dataset.goto);
