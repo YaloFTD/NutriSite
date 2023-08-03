@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background-color: #fff;
 }
-._lock body {
+body._lock {
   overflow: hidden;
   -ms-touch-action: none;
       touch-action: none;
@@ -920,6 +920,7 @@ body {
   .icon-menu {
     display: block;
     position: relative;
+    background-color: transparent;
     top: 0px;
     right: 0;
     width: 1.875rem;
@@ -4823,22 +4824,22 @@ body {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   opacity: 1;
-  -webkit-transition: all 0.8s ease 2.4s;
-  transition: all 0.8s ease 2.4s;
+  -webkit-transition: all 0.8s ease 2.2s;
+  transition: all 0.8s ease 2.2s;
 }
 .decor-review._active .decor-review__item-2 {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   opacity: 1;
-  -webkit-transition: all 0.8s ease 2.8s;
-  transition: all 0.8s ease 2.8s;
+  -webkit-transition: all 0.8s ease 2.4s;
+  transition: all 0.8s ease 2.4s;
 }
 .decor-review._active .decor-review__item-3 {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   opacity: 1;
-  -webkit-transition: all 0.8s ease 3s;
-  transition: all 0.8s ease 3s;
+  -webkit-transition: all 0.8s ease 2.6s;
+  transition: all 0.8s ease 2.6s;
 }
 .decor-review__item {
   -webkit-transform: translateY(120%);
