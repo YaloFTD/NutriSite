@@ -102,7 +102,7 @@ if (menuLinks.length > 0) {
       let menuLink = e.target;
       if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
          let gotoBlock = document.querySelector(menuLink.dataset.goto);
-         let gotoBlockValue = gotoBlock.getBoundingClientRect().top + 1 + pageYOffset - document.querySelector('header').offsetHeight;
+         let gotoBlockValue = gotoBlock.getBoundingClientRect().top + 2 + pageYOffset - document.querySelector('header').offsetHeight;
          if (menu.classList.contains('_active')) {
             document.body.classList.remove('_lock');
             menu.classList.remove('_active');
