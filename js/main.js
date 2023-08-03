@@ -102,13 +102,13 @@ if (menuLinks.length > 0) {
       let menuLink = e.target;
       if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
          let gotoBlock = document.querySelector(menuLink.dataset.goto);
-         let gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+         let gotoBlockValue = gotoBlock.getBoundingClientRect().top + 1 + pageYOffset - document.querySelector('header').offsetHeight;
          if (menu.classList.contains('_active')) {
             document.body.classList.remove('_lock');
             menu.classList.remove('_active');
             menuBody.classList.remove('_active');
          }
-
+         
          window.scrollTo({
             top: gotoBlockValue,
             behavior: 'smooth'
@@ -116,19 +116,19 @@ if (menuLinks.length > 0) {
          e.preventDefault();
       }
    }
-   function onMenuLinkScroll(e) { 
+   function onMenuLinkScroll(e) {
       let scrollDistance = window.scrollY;
-      for (let menuLink of menuLinks) { 
-         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) { 
+      for (let menuLink of menuLinks) {
+         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
             let gotoBlock = document.querySelector(menuLink.dataset.goto);
             let gotoBlockHeight = document.querySelector(menuLink.dataset.goto).offsetHeight;
             let gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollDistance - document.querySelector('header').offsetHeight;
             if (gotoBlock.offsetTop - document.querySelector('header').offsetHeight <= scrollDistance && gotoBlockHeight + gotoBlockValue > scrollDistance) {
-                  for (let menuLink of menuLinks) {
-                     if (menuLink.classList.contains('_active')) {
-                        menuLink.classList.remove('_active');
-                     }
+               for (let menuLink of menuLinks) {
+                  if (menuLink.classList.contains('_active')) {
+                     menuLink.classList.remove('_active');
                   }
+               }
                menuLink.classList.add('_active');
             } else {
                menuLink.classList.remove('_active');
