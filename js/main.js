@@ -122,7 +122,7 @@ if (menuLinks.length > 0) {
          if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
             let gotoBlock = document.querySelector(menuLink.dataset.goto);
             let gotoBlockHeight = document.querySelector(menuLink.dataset.goto).offsetHeight;
-            let gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollDistance - document.querySelector('header').offsetHeight;
+            let gotoBlockValue = gotoBlock.getBoundingClientRect().top + 1 + scrollDistance - document.querySelector('header').offsetHeight;
             if (gotoBlock.offsetTop - document.querySelector('header').offsetHeight <= scrollDistance && gotoBlockHeight + gotoBlockValue > scrollDistance) {
                for (let menuLink of menuLinks) {
                   if (menuLink.classList.contains('_active')) {
