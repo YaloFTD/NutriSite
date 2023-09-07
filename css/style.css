@@ -833,7 +833,7 @@ body._lock {
   }
 }
 .menu__item {
-  padding: 0.3125rem 0rem;
+  padding: 0.625rem 0rem;
 }
 @supports (margin-right: clamp( 2.5rem , -0.8802816901rem  +  7.0422535211vw , 6.25rem )) {
   .menu__item:not(:last-child) {
@@ -1223,6 +1223,9 @@ body._lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1238,12 +1241,27 @@ body._lock {
             align-items: flex-start;
   }
 }
+.home__body {
+  position: relative;
+  z-index: 10;
+}
 @media (min-width: 61.99875em) {
   .home__body {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
+    max-width: 37.5rem;
     padding-right: 1.875rem;
+  }
+}
+@media (max-width: 87.5em) {
+  .home__body {
+    max-width: 31.25rem;
+  }
+}
+@media (max-width: 68.75em) {
+  .home__body {
+    max-width: 26.25rem;
   }
 }
 .home__body._active .home__title {
@@ -1268,7 +1286,7 @@ body._lock {
   transition: all 0.8s ease 0.4s;
 }
 .home__title {
-  max-width: 39.75rem;
+  max-width: 37.5rem;
   -webkit-transform: translateX(-120%);
           transform: translateX(-120%);
   opacity: 0;
@@ -1901,6 +1919,8 @@ body._lock {
   }
 }
 .menu-foods__slider {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   width: 100%;
 }
 @media (min-width: 61.99875em) {
@@ -2132,7 +2152,7 @@ body._lock {
           align-items: center;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 50px;
   z-index: 20;
   -webkit-transform: translateY(120%);
           transform: translateY(120%);
@@ -2143,6 +2163,7 @@ body._lock {
 @media (max-width: 36.875em) {
   .menu-foods__arrows {
     margin-top: 1.875rem;
+    bottom: 20px;
     position: relative;
   }
 }
@@ -2207,6 +2228,9 @@ body._lock {
           transform: rotate(-180deg);
 }
 
+.menu-foods-slide {
+  padding-bottom: 3.125rem;
+}
 @media (min-width: 61.99875em) {
   .menu-foods-slide {
     overflow: hidden;
@@ -2624,6 +2648,8 @@ body._lock {
   }
 }
 .about__content {
+  position: relative;
+  z-index: 10;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
@@ -2762,8 +2788,14 @@ body._lock {
   }
 }
 .about__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-transform: translateX(-120%);
           transform: translateX(-120%);
+  row-gap: 1.25rem;
   opacity: 0;
 }
 @media (min-width: 29.99875em) {
@@ -2782,9 +2814,6 @@ body._lock {
   .about__btn {
     display: block;
     width: 100%;
-  }
-  .about__btn:not(:last-child) {
-    margin-bottom: 1.25rem;
   }
 }
 .about__link {
